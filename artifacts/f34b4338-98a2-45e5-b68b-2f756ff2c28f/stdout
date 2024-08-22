@@ -1,0 +1,8 @@
+
+PLAY [Retrieve Voice Port Configurations from Cisco IOS Router] ****************
+
+TASK [Gather voice port configurations] ****************************************
+[0;31mfatal: [dynamic_inventory.json]: FAILED! => {"msg": "Unable to automatically determine host network os. Please manually configure ansible_network_os value for this host"}[0m
+
+PLAY RECAP *********************************************************************
+[0;31mdynamic_inventory.json[0m     : ok=0    changed=0    unreachable=0    [0;31mfailed=1   [0m skipped=0    rescued=0    ignored=0   

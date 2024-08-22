@@ -1,0 +1,18 @@
+# Use an official Python runtime as a parent image
+FROM python:3.9-slim
+
+# Set the working directory in the container
+WORKDIR /ansible
+
+# Install Ansible and required collections
+RUN pip install ansible paramiko
+RUN ansible-galaxy collection install cisco.ios
+
+# Copy the current directory contents into the container at /ansible
+COPY get_voice_port_details.yml /ansible/.
+COPY inventory/host-file /ansible/staticInventor.ini
+
+ENV ANSIBLE_HOST_KEY_CHECKING=False
+
+# Run the Ansible playbook
+CMD ["ansible-playbook", "-i", "staticInventor.ini", "get_voice_port_details.yml"]

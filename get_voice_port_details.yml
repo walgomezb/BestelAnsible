@@ -1,0 +1,23 @@
+- name: Get voice-port config and summary from Cisco IOS router
+  hosts: cisco_router
+  gather_facts: no
+  tasks:
+    - name: Get voice_port_configs
+      cisco.ios.ios_command:
+        commands:
+          - show running-config | section voice-port
+      register: voice_port_configs
+
+    - name: Get voice_port_summary
+      cisco.ios.ios_command:
+        commands:
+          - show voice port sumummary
+      register: voice_port_summary
+
+    - name: Print voice_port_configs
+      debug:
+        msg: '{{ voice_port_configs.stdout[0] }}'
+
+    - name: Print voice_port_summary
+      debug:
+        msg: '{{ voice_port_summary.stdout[0] }}'

@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "c2b96f85-8729-4b82-a7cc-6da4c23d1852", "counter": 1, "stdout": "\u001b[0;31mERROR! the playbook: ../playbooks/get_voice_port_details.yml could not be found\u001b[0m", "start_line": 0, "end_line": 1, "runner_ident": "66d7b515-d248-445d-b79f-212127cfd584", "created": "2024-08-16T22:19:31.367800+00:00"}

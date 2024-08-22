@@ -1,0 +1,1 @@
+{"all": {"hosts": {"201.148.0.101": {"ansible_network_os": "cisco.ios.ios", "ansible_user": "z3qu3nC@ct1", "ansible_password": "Onbo@rd1NG#0ToUcH2024", "ansible_ssh_pass": "Onbo@rd1NG#0ToUcH2024", "ansible_connection": "network_cli"}}}}

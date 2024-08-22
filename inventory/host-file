@@ -1,0 +1,11 @@
+[cisco_routers]
+central ansible_host=201.148.0.101
+
+[cisco_routers:vars]
+ansible_network_os=ios
+ansible_connection=network_cli
+ansible_user='z3qu3nC@ct1' 
+ansible_ssh_password='Onbo@rd1NG#0ToUcH2024'
+
+ansible_password='Onbo@rd1NG#0ToUcH2024'
+ansible_ssh_common_args='-o KexAlgorithms=diffie-hellman-group-exchange-sha1 -o HostKeyAlgorithms=ssh-rsa -o StrictHostKeyChecking=no'

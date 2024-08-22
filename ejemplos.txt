@@ -1,0 +1,22 @@
+curl -X POST http://192.168.68.113:9999/get_voice_ports -H "Content-Type: application/json" -d '{"target_ip": "201.148.0.101", "username": "z3qu3nC@ct1", "password": "Onbo@rd1NG#0ToUcH2024"}'
+
+
+
+curl -X POST http://192.168.68.113:9999/writeVoicePortConfig -H "Content-Type: application/json" -d '{
+    "target_ip": "201.148.0.101",
+    "username": "z3qu3nC@ct1",
+    "password": "Onbo@rd1NG#0ToUcH2024",
+    "port_name": "0/2/2",
+    "input_gain": "4",
+    "output_attenuation": "-4",
+    "description": "SIF pto 4",
+    "admin_status": "up"
+}'
+
+
+
+
+ Let's now focus on the Angular front-end project. Beside the Update Button, let´s add another button: SaveToRouter, when this button is pressed it will call the 
+
+
+ please update the BankCentralRouterManager service, adding a method saveVoicePortToRouter, this method will receive the central router id, 

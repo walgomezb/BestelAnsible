@@ -1,0 +1,12 @@
+- name: Configure voice-port on Cisco IOS router
+  hosts: cisco_router
+  gather_facts: no
+  tasks:
+    - name: Configure voice-port
+      cisco.ios.ios_config:
+        lines:
+          - "{{ 'input gain ' + input_gain if input_gain != 'NA' else '' }}"
+          - "{{ 'output attenuation ' + output_attenuation if output_attenuation != 'NA' else '' }}"
+          - "{{ 'shutdown' if admin_status == 'shutdown' else 'no shutdown' }}"
+        parents: "voice-port {{ port_name }}"
+      when: port_name is defined

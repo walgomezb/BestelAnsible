@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "3dfd4ba6-1a9d-4c9c-bb0a-ba0306290138", "counter": 12, "stdout": "\u001b[0;31m        var: voice_port_details\u001b[0m", "start_line": 11, "end_line": 12, "runner_ident": "94c506a8-ede5-43c1-a443-8c48d7c639f8", "created": "2024-08-16T22:22:46.992164+00:00"}
