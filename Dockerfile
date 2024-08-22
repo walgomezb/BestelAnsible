@@ -18,7 +18,7 @@ COPY ./src/playbookRunner.py .
 
 
 # Expose the port the app runs on
-EXPOSE 9999
+EXPOSE 5499
 
 # Run the Flask app
 CMD ["python", "playbookRunner.py"]
