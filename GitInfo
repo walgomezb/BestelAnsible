@@ -5,3 +5,11 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/walgomezb/BestelAnsible.git
 git push -u origin main
+
+
+git clone https://github.com/walgomezb/BestelAnsible.git
+
+
+docker build -t ansible-flask-app .
+docker run -it --rm -p 9999:5000 ansible-flask-app
+
